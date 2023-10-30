@@ -1,2 +1,99 @@
 @import './common';
-@import './example';
+body {
+  background-image: linear-gradient(-110deg, #ffe818, #38da07);
+}
+img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 15px;
+
+  justify-content: center;
+}
+.card-container {
+  text-align: center;
+  width: calc((100% - 50px) / 3);
+  transition: transform 0.25s;
+  border-radius: 5px;
+  background-color: rgb(47, 0, 255);
+}
+.card-container:hover {
+  transform: scale(1.03);
+}
+
+.info {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 25px;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  color: #fff;
+  border: none;
+}
+.search-form {
+  width: 100%;
+  justify-content: center;
+  padding-top: 15px;
+  display: flex;
+}
+
+.input-container:hover,
+.input-container:focus {
+  box-shadow: 0 0 5px 2px rgba(0, 4, 56, 0.5);
+}
+.search-form:hover {
+}
+.search-form input {
+  width: 17%;
+  border-right: none;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  padding: 8px 10px;
+}
+// .input-container:hover,
+// .input-container:focus {
+//
+// }
+
+.search-form button {
+  cursor: pointer;
+  background-color: #fff;
+  border-left: none;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-radius: 0 5px 5px 0;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+}
+// .search-form button:hover,
+// .search-form button:focus {
+//   box-shadow: 0 0 5px 2px rgba(0, 4, 56, 0.5);
+// }
